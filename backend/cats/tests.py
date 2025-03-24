@@ -5,6 +5,7 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 
 
+
 class CatsAPITestCase(TestCase):
     def setUp(self):
         User = get_user_model()
