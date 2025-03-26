@@ -27,8 +27,8 @@ services:
     image: klyuevay/kittygram_gateway
     env_file: .env
     volumes:
-      - static:/static_files
+      - static:/staticfiles/
       - media:/media
     ports:
-      - 8080:80
+      - 9000:80
 
