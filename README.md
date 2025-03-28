@@ -1,3 +1,8 @@
+https://github.com/KlyuevAleksandr/kittygram_final/actions/workflows/WORKFLOW-FILE/badge.svg
+
+![Main Kittygram workflow](https://github.com/KlyuevAleksandr/kittygram_final/actions/workflows/main.yml/badge.svg)
+
+
 # Контейнеры и CI/CD для Kittygram
 
 
