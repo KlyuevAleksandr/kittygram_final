@@ -14,6 +14,8 @@ services:
   backend:
     image: klyuevay/kittygram_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
       - static:/backend_static
       - media:/app/media
@@ -26,6 +28,8 @@ services:
   gateway:
     image: klyuevay/kittygram_gateway
     env_file: .env
+    depends_on:
+      - backend
     volumes:
       - static:/staticfiles/
       - media:/mediafiles/
