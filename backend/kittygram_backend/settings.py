@@ -1,4 +1,3 @@
-# flake8: noqa
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -9,7 +8,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEYS', 'default')
 
-#DEBUG = True
 DEBUG = os.getenv('DEBUG', 'False')
 
 ALLOWED_HOSTS = ['84.201.152.148', 'aleksandr89.ddns.net', '127.0.0.1', 'localhost']
