@@ -1,26 +1,84 @@
-#  Как работать с репозиторием финального задания
+# Контейнеры и CI/CD для Kittygram
 
-## Что нужно сделать
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+## <summary>Описание</summary>
+Kittygram — проект для обмена фотографиями любимых CATs.
 
-## Как проверить работу с помощью автотестов
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
+## <summary>Установка</summary>
+Чтобы развернуть проект на локальной машине, необходимо выполнить следующие действия:
+
+
+Проект находится по ссылке:  https://github.com/KlyuevAleksandr/kittygram_final.git
+
+Клонировать проект:
+```green
+   git clone git@github.com:KlyuevAleksandr/kittygram_final.git
 ```
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+Перейти в директорию проекта: 
+```green
+   cd kittygram_final
+```
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
 
-## Чек-лист для проверки перед отправкой задания
+Создать виртуальное окружение: 
+```green
+   python -m venv venv
+```
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+Активировать виртуальное окружение: 
+```green
+   source venv/Scripts/activate
+```
+
+Обновить пакетный менеджер: 
+```green
+   python -m pip install --upgrade pip
+```
+
+Установить зависимости: 
+```green
+   pip install -r requirements.txt
+```
+
+Выполнить миграции пректа: 
+```green
+   python manage.py migrate
+```
+
+Запустить проект: 
+```green
+   python manage.py runserver
+```
+
+
+
+Проект расположен на сервере и работает 24/7.
+
+Для просмотра проекта необходимо перейти по адресу: https://aleksandr89.ddns.net/
+
+
+## <summary>CTEK технологии(requirements.txt)</summary>
+Django==3.2.3
+djangorestframework==3.12.4
+djoser==2.1.0
+webcolors==1.11.1
+psycopg2-binary==2.9.3
+Pillow==9.0.0
+pytest==6.2.4
+pytest-django==4.4.0
+pytest-pythonpath==0.7.3
+PyYAML==6.0
+python-dotenv==1.0.1
+
+Также:
+Python == 3.10.12
+Gunicorn == 20.1.0
+Nginx
+Docker
+PostgreSQL
+
+
+## <summary>Автор</summary>
+https://github.com/KlyuevAleksandr 
