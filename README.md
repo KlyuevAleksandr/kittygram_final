@@ -1,4 +1,4 @@
-https://github.com/KlyuevAleksandr/kittygram_final/actions/workflows/WORKFLOW-FILE/badge.svg
+![Main Kittygram workflow](https://github.com/KlyuevAleksandr/kittygram_final/actions/workflows/WORKFLOW-FILE/badge.svg)
 
 ![Main Kittygram workflow](https://github.com/KlyuevAleksandr/kittygram_final/actions/workflows/main.yml/badge.svg)
 
@@ -65,24 +65,24 @@ Kittygram — проект для обмена фотографиями люби
 
 
 ## <summary>CTEK технологии(requirements.txt)</summary>
-Django==3.2.3
-djangorestframework==3.12.4
-djoser==2.1.0
-webcolors==1.11.1
-psycopg2-binary==2.9.3
-Pillow==9.0.0
-pytest==6.2.4
-pytest-django==4.4.0
-pytest-pythonpath==0.7.3
-PyYAML==6.0
-python-dotenv==1.0.1
+- Django==3.2.3
+- djangorestframework==3.12.4
+- djoser==2.1.0
+- webcolors==1.11.1
+- psycopg2-binary==2.9.3
+- Pillow==9.0.0
+- pytest==6.2.4
+- pytest-django==4.4.0
+- pytest-pythonpath==0.7.3
+- PyYAML==6.0
+- python-dotenv==1.0.1
 
 Также:
-Python == 3.10.12
-Gunicorn == 20.1.0
-Nginx
-Docker
-PostgreSQL
+- Python == 3.10.12
+- Gunicorn == 20.1.0
+- Nginx
+- Docker
+- PostgreSQL
 
 
 ## <summary>Автор</summary>
